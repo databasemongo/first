@@ -1,25 +1,30 @@
 <!doctype html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 <meta charset="utf-8">
 <title>Login Form</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylesheets/signup.css">
 </head>
 <body>
 <div class="loginBox">
-<img src="images.png" class="user">
+<!-- <img src="images.png" class="user"> -->
 <h2>Sign Up</h2>
-<form>
-<p>UserName</p>
-<input type="text" name="" placeholder="Enter UserName" type="text">
-<p>RollNo</p>
-<input type="text" name="" placeholder="Enter RollNo" type="text">
-<p>Password</p>
-<input type="password" name="" placeholder="Enter Password" type="password">
-<p>Confirm Password</p>
-<input type="text" name="" placeholder="Confirm Password" type="text">
-<input type="submit" name="" value="Sign Up">
-<a href="index1.html">Already Have an Account</a>
+<form action="/signup" method="post">
+<label>UserName</label>
+<input type="text" name="name" placeholder="Enter UserName" type="text">
+<label>Email</label>
+<input type="text" name="email" placeholder="Enter Email" type="text">
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter Password" type="password">
+<label>Confirm Password</label>
+<input type="text" name="password2" placeholder="Confirm Password" type="text">
+<input type="submit" name="signup" value="signup">
+<a href="/index1">Already Have an Account</a>
 </form>
 </div>
 </body>
